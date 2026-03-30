@@ -2,8 +2,14 @@
 
 [ext_resource type="Script" uid="uid://bat5s85ket6xo" path="res://scenes/main.gd" id="1_rvslj"]
 [ext_resource type="PackedScene" uid="uid://wv4fmf1a3xtg" path="res://scenes/Nemo.tscn" id="2_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://bw2sotoonhxyi" path="res://scenes/Bedroom.tscn" id="3_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://2qwgl1v647t2" path="res://scenes/UI.tscn" id="4_rarhs"]
 
 [node name="Main" type="Node2D" unique_id=1187477927]
 script = ExtResource("1_rvslj")
 
 [node name="Nemo" parent="." unique_id=738333015 instance=ExtResource("2_0bbpv")]
+
+[node name="Bedroom" parent="." unique_id=599292224 instance=ExtResource("3_0bbpv")]
+
+[node name="Ui" parent="Bedroom" unique_id=592882746 instance=ExtResource("4_rarhs")]

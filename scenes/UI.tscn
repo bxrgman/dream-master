@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://2qwgl1v647t2"]
+
+[ext_resource type="Script" uid="uid://b0mq62ga64qc2" path="res://scenes/ui.gd" id="1_dj8aq"]
+
+[node name="Ui" type="CanvasLayer" unique_id=592882746]
+script = ExtResource("1_dj8aq")
+
+[node name="FearBar" type="ProgressBar" parent="." unique_id=1116506098]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 320.0
+offset_bottom = 47.0
+
+[node name="Vignette" type="ColorRect" parent="." unique_id=1650457363]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0)

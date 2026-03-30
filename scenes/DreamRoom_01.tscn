@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cws5bwcnnvnn7"]
+
+[ext_resource type="Script" uid="uid://c5kbgah3iolsx" path="res://scenes/dream_room.gd" id="1_j5ynh"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_43dbe"]
+
+[node name="DreamRoom01" type="Node2D" unique_id=1944774454]
+script = ExtResource("1_j5ynh")
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=134199240]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=599203761]
+shape = SubResource("WorldBoundaryShape2D_43dbe")
+
+[node name="Background" type="ColorRect" parent="." unique_id=459011617]
+show_behind_parent = true
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.101960786, 0.101960786, 0.18039216, 1)
+
+[node name="SpawnPoint" type="Marker2D" parent="." unique_id=143730378]
+position = Vector2(200, 300)

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bw2sotoonhxyi"]
+
+[ext_resource type="Script" uid="uid://y5adqki6xfq5" path="res://scenes/bedroom.gd" id="1_13mbk"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qxlp7"]
+
+[node name="Bedroom" type="Node2D" unique_id=599292224]
+script = ExtResource("1_13mbk")
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=42201278]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=2064145461]
+shape = SubResource("WorldBoundaryShape2D_qxlp7")
+
+[node name="ShadowTimer" type="Timer" parent="." unique_id=1147325168]
+wait_time = 5.0
+one_shot = true
